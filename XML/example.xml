@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gameCatalog SYSTEM "reviews.dtd">
+
+<gameCatalog>
+	<game id="overwatch">
+		<characteristics>
+			<dates>
+				<devStart>7 Novembre 2014</devStart>
+				<release delayed="n">24 Mai 2016</release>
+			</dates>
+			<studio>Blizzard Entertainment</studio>
+			<sales year="2018">40 Millions</sales>
+			<price shop="Blizzard Store">39.99€</price>
+		<logo src="https://d3hmvhl7ru3t12.cloudfront.net/img/logos/overwatch-share-3d5a268515283007bdf3452e877adac466d579f4b44abbd05aa0a98aba582eeaebc4541f1154e57ec5a43693345bebda953381a7b75b58adbd29d3f3eb439ad2.jpg" />
+		</characteristics>
+		<resume>
+			<genre>FPS</genre>
+			<goal>Overwatch est un jeu de tir dans lequel 2 équipes de 6 se combattent pour controller plusieurs points d'objectifs sur les maps.</goal>
+			<description>Lorsque vous jouer à Overwatch, vous vous rendez compte très rapidement que le jeu est très dynamique. Le shooter 6c6 est très unique, comportant à présent 27 héros différents, vous permet de trouver le héro ou la héroïne qui vous convient le plus!</description>
+		</resume>
+		<opinion>
+			<jacob note="8">Overwatch n'est pas un jeu sans défauts, mais les défauts qu'il a ne sont pas très important. Le jeu est addictif, avec des très beau graphismes et une communauté très accueillante. Vous ne regretterez pas de l'avoir acheté.</jacob>
+		</opinion>
+	</game>
+		<game id="dofus">
+		<characteristics>
+			<dates>
+				<release delayed="n">1er Septembre 2004</release>
+			</dates>
+			<studio>Ankama Games</studio>
+			<sales year="2018">10 Millions</sales>
+			<price shop="dofus.com">5€/mois</price>
+			<logo src="https://s.ankama.com/www/static.ankama.com/dofus/ng/img/logo_dofus.jpg" />
+		</characteristics>
+		<resume>
+			<genre>MMORPG</genre>
+			<goal>Avoir les six dofus ou être niveau 200.</goal>
+			<description>Dofus est un jeu ou vous pouvez choisir un personnage parmis 18 classes pour le faire évoluer à travers combats et quêtes sur plusiseurs territoires de niveaux différents. Vous pouvez faire du pvp/pvm ou bien vous enrichir grâce au système d'hotel de ville. Avec les loots des mobs ou votre argent vous pouvez acheter des équipements pour atteindre vos objectifs.</description>
+		</resume>
+		<opinion>
+			<yannis note="9">Le seul défaut de dofus est l'addiction qu'il peut provoquer.</yannis>
+		</opinion>
+	</game>
+</gameCatalog>

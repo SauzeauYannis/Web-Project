@@ -1,0 +1,32 @@
+/*************
+* Balises ul *
+**************/
+
+ul{
+    list-style: url("../Images/plus.png"); /* Met une image à la place des puces */
+}
+
+/***********
+* Class no *
+************/
+
+.no{
+    list-style: none;                      /* Enlève les puces */
+}
+
+/********************************************************************************
+* Balise ul descandantes d'une balise li elle-même descandantes d'une balise ul *
+*********************************************************************************/
+
+ul > li > ul{
+    display: none;                         /* Cache la liste */
+}
+
+/*******************************************************************************
+* Quand la souris passe dessus une balise span qui contient l'attribut onclick *
+********************************************************************************/
+
+span[onclick]:hover{
+    font-style: italic;                    /* Met en italique */
+    font-size: 1.2em;                      /* Met la police 20% plus grande qu'elle est d'origine */
+}

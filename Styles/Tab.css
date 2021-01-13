@@ -1,0 +1,38 @@
+/*****************
+* Balise article *
+******************/
+
+article{
+    text-align: center;        /* Aligne au centre */
+}
+
+/***************
+* Balise table *
+****************/
+
+table
+{
+    border-collapse: collapse; /* Met les bordures collés */
+    margin-right: auto;        /* Met la marge doite automatiquement */
+    margin-left: auto;         /* Met la marge gauche automatiquement */
+}
+
+/*******************
+* Balises td et th *
+********************/
+
+td, th
+{
+    border: 1px solid white;   /* */
+    padding: 5px;              /* Met les bordures intérieurs à 5 pixels */
+    text-align: center;        /* Aligne au centre */
+}
+
+/*****************
+* Balise caption *
+******************/
+
+caption
+{
+    caption-side: bottom;      /* Met en bas */
+}

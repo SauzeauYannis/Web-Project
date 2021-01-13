@@ -1,0 +1,36 @@
+/*******************
+* Class collection *
+********************/
+
+.collection{
+ 	list-style: none;                      /* Enlève les puces de la liste */
+	width: 90%;                            /* Met la largeur à 90% */
+	height: 90%;                           /* Met la hauteur à 90% */
+	text-align: center;                    /* Met le texte au centre */
+}
+
+/****************************************
+* Les balises li de la class collection *
+*****************************************/
+
+.collection li{
+	display: inline-block;                 /* Met un bloque sur une ligne */
+	vertical-align: middle;                /* Aligne au milleu verticalement */
+	margin: 15px;                          /* Met une marge tout autour de 15 pixels */
+}
+
+/**************************************************
+* Les balises ul descandantes de la balise footer *
+***************************************************/
+
+footer ul{
+	list-style: url("../Images/mail.png"); /* Met une image en puce */
+}
+
+/*************************************************
+* Les balises p descandantes de la balise footer *
+**************************************************/
+
+footer p{
+	float: right;                          /* Met à droite */
+}

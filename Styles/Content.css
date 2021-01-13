@@ -1,0 +1,59 @@
+/*************************************
+* Balise image dans la balise footer *
+**************************************/
+
+article img{
+    display: block;         /* met en bloque */
+    margin-right: auto;     /* marge automatique à droite */
+    margin-left: auto;      /* marge automatique à gauche */
+}
+
+/**************
+* Class block *
+***************/
+
+.block{
+    width: 49%;             /* met la largeur à 49% de la  page */
+    display: inline-block;  /* met un bloque sur une ligne */
+    vertical-align: top;    /* centre verticalement */
+}
+
+/***************
+* Class center *
+****************/
+
+.center{
+    text-align: center;     /* aligne le bloque au centre */
+}
+
+/****************
+* Balise footer *
+*****************/
+
+footer{
+    text-align: center;     /* aligne le bloque au centre */
+}
+
+/**************************
+* Balise a dans le footer *
+***************************/
+
+footer a{
+    display: inline-block;  /* met un bloque sur une ligne */
+}
+
+/**********
+* Id left *
+***********/
+
+#left{
+    float: left;            /* Met à gauche */
+}
+
+/***********
+* Id right *
+************/
+
+#right{
+    float: right;           /* Met à droite */
+}

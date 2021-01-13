@@ -1,0 +1,47 @@
+/**************************************************************
+* Importe un fichier de style pour un affichage de type écran *
+***************************************************************/
+
+@import "StyleCommun.css" screen;
+
+/**************
+* Balise body *
+***************/
+
+body{
+    background-color: dimgrey; /* Met le fond en gris */
+    color: white;              /* Met la couleur en blanc */
+    font-size: 26px;           /* Met la taille de la police à 26 pixels */
+}
+
+/*********************************************
+* Balises a descendantes de la balise header *
+**********************************************/
+
+header a{
+    font-size: 35px;           /* Met la taille de la police à 35 pixels */
+}
+
+/*******************************************************************
+* Première lettre de la balises a descendantes de la balise header *
+********************************************************************/
+
+header a:first-letter{
+    font-size: 45px;          /* Met la taille de la police à 45 pixels */
+}
+
+/***********
+* Balise a *
+************/
+
+a{
+    color: antiquewhite;      /* Met la couleur en blanc antique */
+}
+
+/************
+* Balise hr *
+*************/
+
+hr{
+    color: white;             /* Met la couleur en blanc */
+}

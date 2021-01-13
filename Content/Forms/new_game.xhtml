@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html  xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Revues de Jeux PC - Ajouter un jeu</title>
+    <link rel="shortcut icon" href="../../Images/shortcut.png"/>
+    <link rel="stylesheet" media="screen" href="../../Styles/FormNorm.css" title="Style principal"/>
+    <link rel="alternate stylesheet" media="screen" href="../../Styles/FormAlt.css" title="Style pour malvoyants"/>
+    <script type="text/javascript" src="../../Javascript/FormNewGame.js"></script>
+    <script type="text/javascript" src="../../Javascript/RecapNewGame.js"></script>
+</head>
+<body>
+
+<header>
+    <a href="../../index.xhtml" title="Cliquez sur le lien pour revenir sur la page d'acceuil">Accueil</a>
+    <a href="../Miscellaneous/plan_du_site.xhtml" title="Cliquez sur le lien pour voir le plan du site">Plan du site</a>
+    <a href="../Miscellaneous/tableau_synoptique.xhtml" title="Cliquez sur le lien pour voir le tableau synoptique">Tableau synoptique</a>
+    <a href="new_game.xhtml" title="Cliquez sur le lien pour ajouter un nouveau jeu">Ajouter un nouveau jeu</a>
+    <a href="../../index.xhtml#contact" title="Cliquez sur le lien pour nous contacter">Contact</a>
+    <hr />
+</header>
+
+<article>
+    <h1>Bienvenue sur la page pour ajouter un nouveau jeu à la collection</h1>
+    <h3>Ci-dessous, se trouve un questionnaire que vous devez remplir avec les informations que vous avez du jeu (tous ce qui a une étoile est obligatoire)</h3>
+    <form action="http://voca.univ-poitiers.fr/~subrenat/cours_web/traitement.php" method="post">
+        <fieldset>
+            <legend>Informations générales</legend>
+            <p>
+                <label for="id_name">Votre pseudo<sup>*</sup> : </label>
+                <input id="id_name" name="name" type="text" placeholder="pseudo" required="required" class="bot"/>
+            </p>
+            <p>
+                <label for="id_nameGame">Nom du jeu<sup>*</sup> : </label>
+                <input id="id_nameGame" name="nameGame" type="text" placeholder="nomdujeu" required="required" class="bot"/>
+            </p>
+            <p>
+                Image du jeu :<br/>
+                <label for="id_fileImg">Sur votre PC : </label>
+                <input id="id_fileImg" name="fileImg" type="file"/><br/>
+                Ou/Et<br/>
+                <label for="id_urlImg">Sur Internet : </label>
+                <input id="id_urlImg" name="urlImg" type="url" placeholder="https://exemple.com"/>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Caractéristiques du jeu</legend>
+            <p>
+                <label for="id_devDate">Date du développement : </label>
+                <input id="id_devDate" name="devDate" type="date" class="bot"/>
+            </p>
+            <p>
+                <label for="id_finishDate">Date de sortie<sup>*</sup> : </label>
+                <input id="id_finishDate" name="finishDate" type="date" required="required" class="bot"/>
+            </p>
+            <p>
+                <label for="id_devSite">Développé par (url du site des développeurs)<sup>*</sup> : </label>
+                <input id="id_devSite" name="devSite" type="url" placeholder="https://exemple.com" required="required" class="bot"/>
+            </p>
+            <p>
+                <label for="id_nbrSell">Nombre de copies vendues<sup>*</sup> : </label>
+                <input id="id_nbrSell" name="nbrSell" type="number" min="0" max="200000000" placeholder="0" required="required" />
+                <label for="id_dateSell"> le : </label>
+                <input id="id_dateSell" name="dateSell" type="date"/>
+            </p>
+            <p>
+                <label for="id_price">Prix<sup>*</sup> : </label>
+                <input id="id_price" name="price" type="number" min="0" max="1000" placeholder="0" required="required"/>
+                <label for="id_priceSite">€, sur (url du site marchand) : </label>
+                <input id="id_priceSite" name="priceSite" type="url" placeholder="https://exemple.com"/>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Résumé du jeu</legend>
+            <p>
+                <label for="id_kind">Genre du jeu (url du wikipedia du genre)<sup>*</sup> : </label>
+                <input id="id_kind" name="kind[]" type="url" placeholder="https://exemple.com" required="required"/>
+                <button type="button" onclick="addNewKind();">Ajouter un autre genre</button>
+            </p>
+            <p>
+                <label for="id_goal">But du jeu<sup>*</sup> : </label>
+                <textarea id="id_goal" name="goal" placeholder="écrivez un texte expliquant le but du jeu" rows="4" cols="40" required="required" class="bot"></textarea>
+            </p>
+            <p>
+                <label for="id_src">Sources (url des sites web consultés)<sup>*</sup> : </label>
+                <input id="id_src" name="src[]" type="url" placeholder="https://exemple.com" required="required"/>
+                <button type="button" onclick="addNewSrc();">Ajouter une autre source</button>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Avis</legend>
+            <p>
+                <label for="id_view">Que pensez-vous du jeu ?<sup>*</sup> : </label>
+                <textarea id="id_view" name="view" placeholder="écrivez ce que vous pensez du jeu " rows="4" cols="40" required="required" class="bot"></textarea>
+            </p>
+            <p>
+                <label for="id_rate">Note de 0 à 10<sup>*</sup> : </label>
+                <input id="id_rate" name="rate" type="range" min="0" max="10" step="1" value="0" onmousemove="viewRange(this)"/><span id="view">0</span>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Vous pouvez maintenant envoyer le formulaire</legend>
+            <div>
+                <input type="reset"/>
+                <input type="button" value="Vérifier" onclick="verify();"/>
+                <input type="button" value="Récapitulatif" onclick="recap()"/>
+                <input type="submit" onmouseover="verifyDate();verifyDate2();"/>
+            </div>
+        </fieldset>
+    </form>
+</article>
+
+<footer></footer>
+
+</body>
+</html>

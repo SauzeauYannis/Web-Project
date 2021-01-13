@@ -1,0 +1,11 @@
+/**************************************************************
+* Importe un fichier de style pour un affichage de type écran *
+***************************************************************/
+
+@import "StyleDeBase.css" screen;
+
+/**************************************************************
+* Importe un fichier de style pour un affichage de type écran *
+***************************************************************/
+
+@import "Tab.css" screen;

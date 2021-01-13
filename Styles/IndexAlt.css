@@ -1,0 +1,27 @@
+/**************************************************************
+* Importe un fichier de style pour un affichage de type écran *
+***************************************************************/
+
+@import "StyleMalvoyant.css" screen;
+
+/**************************************************************
+* Importe un fichier de style pour un affichage de type écran *
+***************************************************************/
+
+@import "Index.css" screen;
+
+/**************************************
+* Balise img fils de la balise header *
+***************************************/
+
+header > img {
+    width: 10%;       /* Met la taille de l'image à 10% de la page */
+}
+
+/*******************************************
+* Balise p descendants de la balise footer *
+********************************************/
+
+footer p{
+    font-size: 30px;  /* Met la taille de la police à 30 pixels */
+}

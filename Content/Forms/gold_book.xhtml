@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html  xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Revues de Jeux PC - Livre d'or</title>
+    <link rel="shortcut icon" href="../../Images/shortcut.png"/>
+    <link rel="stylesheet" media="screen" href="../../Styles/FormNorm.css" title="Style principal"/>
+    <link rel="alternate stylesheet" media="screen" href="../../Styles/FormAlt.css" title="Style pour malvoyants"/>
+    <script type="text/javascript" src="../../Javascript/FormGoldBook.js"></script>
+    <script type="text/javascript" src="../../Javascript/RecapGoldBook.js"></script>
+</head>
+<body>
+
+<header>
+    <a href="../../index.xhtml" title="Cliquez sur le lien pour revenir sur la page d'acceuil">Accueil</a>
+    <a href="../Miscellaneous/plan_du_site.xhtml" title="Cliquez sur le lien pour voir le plan du site">Plan du site</a>
+    <a href="../Miscellaneous/tableau_synoptique.xhtml" title="Cliquez sur le lien pour voir le tableau synoptique">Tableau synoptique</a>
+    <a href="new_game.xhtml" title="Cliquez sur le lien pour ajouter un nouveau jeu">Ajouter un nouveau jeu</a>
+    <a href="../../index.xhtml#contact" title="Cliquez sur le lien pour nous contacter">Contact</a>
+    <hr />
+</header>
+
+<article>
+    <h1>Bienvenue sur la page du livre d'or</h1>
+    <h3>Ci-dessous, se trouve un questionnaire que vous devez remplir pour donner votre avis sur notre site (tous ce qui a une étoile est obligatoire)</h3>
+    <form action="http://voca.univ-poitiers.fr/~subrenat/cours_web/traitement.php" method="post">
+        <fieldset>
+            <legend>Qui êtes-vous ?</legend>
+            <p>
+                <label for="id_name">Nom<sup>*</sup> : </label>
+                <input id="id_name" name="name" type="text" placeholder="Votre nom" required="required" onblur="verifyName(this, 'nom');" size="40" class="bot"/>
+            </p>
+            <p>
+                <label for="id_firstName">Prénom<sup>*</sup> : </label>
+                <input id="id_firstName" name="firstName" type="text" placeholder="Votre prénom" required="required" onblur="verifyName(this, 'prénom');" size="40" class="bot"/>
+            </p>
+            <p>
+                Sexe<sup>*</sup> :
+                <input id="id_woman" name="gender" type="radio" required="required" value="woman"/>
+                <label for="id_woman">Féminin</label>
+                <input id="id_man" name="gender" type="radio" required="required" value="man"/>
+                <label for="id_man">Masculin</label>
+            </p>
+            <p>
+                <label for="id_birth">Date de naissance<sup>*</sup> : </label>
+                <input id="id_birth" name="birth" type="date" required="required" onblur="verifyBirthDate();" class="bot"/>
+            </p>
+            <p>
+                <label for="id_mail">Email<sup>*</sup> : </label>
+                <input id="id_mail" name="mail" type="email" placeholder="votreemail@exemple.com" size="40" required="required" class="bot"/>
+            </p>
+            <p>
+                <label for="id_tel">Numéro de téléphone : </label>
+                <input id="id_tel" name="tel" type="tel" placeholder="01-23-45-67-89" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" size="12" class="bot"/>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Ce que vous avez à dire</legend>
+            <p>
+                <label for="id_game">Quel est le jeu du site que vous péréférez ?</label>
+                <select id="id_game" name="game" size="1">
+                    <option value="none">Aucun...</option>
+                    <option value="ApexLegends">Apex Legends</option>
+                    <option value="Assassin'sCreedIII">Assassin's Creed III</option>
+                    <option value="DarkSouls">Dark Souls</option>
+                    <option value="Dofus">Dofus</option>
+                    <option value="Hollowknight">Hollow Knight</option>
+                    <option value="Minecraft">Minecraft</option>
+                    <option value="Overwatch">Overwatch</option>
+                    <option value="TeamFortress2">Team Fortress 2</option>
+                    <option value="TheCrew">The Crew</option>
+                    <option value="WatchDogs">Watch Dogs</option>
+                </select>
+            </p>
+            <p>
+                Suggérez-vous des améliorations pour ce site ?<sup>*</sup> :
+                <input id="id_yes" name="up" type="radio" required="required" value="yes" onclick="upY()"/>
+                <label for="id_yes">Oui</label>
+                <input id="id_no" name="up" type="radio" required="required" value="no" onclick="upN()"/>
+                <label for="id_no">Non</label>
+            </p>
+            <p id="upYes">
+                Que doit-on améliorer<sup>*</sup> ? :<br />
+                <input id="id_xml" name="upYes[]" type="checkbox" value="xml"/>
+                <label for="id_xml">XML</label><br />
+                <input id="id_html" name="upYes[]" type="checkbox" value="html"/>
+                <label for="id_html">HTML</label><br />
+                <input id="id_css" name="upYes[]" type="checkbox" value="css"/>
+                <label for="id_css">CSS</label><br />
+                <input id="id_javascript" name="upYes[]" type="checkbox" value="javascript"/>
+                <label for="id_javascript">JavaScript</label><br />
+                <input id="id_other" name="upYes[]" type="checkbox" value="other"/>
+                <label for="id_other">
+                    Autre :<br />
+                    <textarea id="upOther" name="proposition" rows="2" cols="20" onclick="other();"></textarea>
+                </label>
+            </p>
+            <p>
+                <label for="id_book">Remplir le livre d'or<sup>*</sup> : </label><br />
+                <textarea id="id_book" name="goldBook" rows="5" cols="50" required="required" placeholder="Livre d'or..."></textarea><br />
+                <label for="id_color">Choisir la couleur d'écriture pour le livre d'or : </label>
+                <input id="id_color" name="color" type="color"/>
+                <button type="button" onclick="changeColor();">Valider</button>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Vous pouvez maintenant envoyer le formulaire</legend>
+            <div>
+                <input type="reset"/>
+                <input type="button" value="Récapitulatif" onmouseover="upYes();checkOther()" onclick="recap();"/>
+                <input type="submit" onmouseover="upYes();checkOther();"/>
+            </div>
+        </fieldset>
+    </form>
+</article>
+
+<footer></footer>
+
+</body>
+</html>

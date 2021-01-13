@@ -1,0 +1,35 @@
+/**************************************************************
+* Importe un fichier de style pour un affichage de type écran *
+***************************************************************/
+
+@import "StyleMalvoyant.css" screen;
+
+/**************************************************************
+* Importe un fichier de style pour un affichage de type écran *
+***************************************************************/
+
+@import "Content.css" screen;
+
+/**************************
+* Balise img dans article *
+***************************/
+
+article img{
+    width: 35%;        /* Met la largeur à 35% de l'origine */
+}
+
+/****************************
+* Balise img dans le footer *
+*****************************/
+
+footer img{
+    width: 200%;       /* Met la largeur de 200% de l'origine */
+}
+
+/***********
+* Id right *
+************/
+
+#right{
+    margin-right: 3%;  /* Met une marge de 3% à droite  */
+}

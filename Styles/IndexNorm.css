@@ -1,0 +1,19 @@
+/**************************************************************
+* Importe un fichier de style pour un affichage de type écran *
+***************************************************************/
+
+@import "StyleDeBase.css" screen;
+
+/**************************************************************
+* Importe un fichier de style pour un affichage de type écran *
+***************************************************************/
+
+@import "Index.css" screen;
+
+/******************************************
+* Balise p descandant de la balise footer *
+*******************************************/
+
+footer p{
+    font-size: 18px;  /* Met la taille de la police à 18 pixels */
+}

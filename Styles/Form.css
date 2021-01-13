@@ -1,0 +1,80 @@
+/*************************
+* Balise avec l'id upYes *
+**************************/
+
+#upYes{
+    display: none;                  /* Cache l'élément */
+}
+
+/*****************************
+* Balises avec la classe bot *
+******************************/
+
+.bot{
+    display: block;                 /* Met en bloc */
+}
+
+/*********************
+* Les balises legend *
+**********************/
+
+legend{
+    border: solid 2px white;        /* Met une bordure noire de 2 pixels */
+    width: 99%;                     /* Met la largeur à 90% */
+    text-align: center;             /* Aligne au centre */
+    padding: 1%;                    /* Met une marge intérieur de 1% */
+}
+
+/***********************
+* Les balises fieldset *
+************************/
+
+fieldset{
+    margin-bottom: 3%;              /* Met une marge en bas de 3% */
+}
+
+/**************************************
+* Les balises div du dernier fieldset *
+***************************************/
+
+fieldset:last-child div{
+    display: block;                 /* Met en bloc */
+    text-align: center;             /* Aligne au centre */
+}
+
+/**********************************************
+* Les balises input, textarea, select, button *
+***********************************************/
+
+input, textarea, select, button{
+    background-color: transparent;  /* Met la couleur du fond en transparent */
+    color: white;                   /* Met la couleur de la police en blanc */
+}
+
+/****************************************************************
+* Les balises input, textarea et select lorsqu'elles sont focus *
+*****************************************************************/
+
+input:focus , textarea:focus, select:focus{
+    background-color: white;        /* Met la couleur de la fond en blanc */
+    color: black;                   /* Met la couleur de la police en noire */
+}
+
+/*****************************************************************************************
+* Les balises input descendantes de la balise fieldset dernière enfant de la balise form *
+******************************************************************************************/
+
+fieldset:last-child input{
+    margin: 1%;                     /* Met une marge de 1% */
+}
+
+/**********************************************************************************************************************************************
+* es balises input descendantes de la balise fieldset dernière enfant de la balise form et les balises button lorsque la souris passe dessous *
+***********************************************************************************************************************************************/
+
+fieldset:last-child input:hover, button:hover{
+    opacity: 0.7;                   /* Met la transparence à 70% */
+    color: white;                   /* Met la couleur de la police en blanc */
+}
+
+

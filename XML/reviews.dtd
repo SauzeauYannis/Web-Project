@@ -1,0 +1,71 @@
+<!ELEMENT gameCatalog (game+)>
+
+<!ELEMENT game (characteristics,resume,opinion)>
+
+<!ATTLIST game
+		  id ID #REQUIRED>
+
+
+<!-- start characterisitics -->
+
+<!ELEMENT characteristics (dates,studio,sales?,price,logo)>
+
+<!ELEMENT dates (devStart?,release)>
+
+<!ELEMENT devStart (#PCDATA)>
+
+<!ELEMENT release (#PCDATA)>
+
+<!ATTLIST release
+          delayed ("y|n")>
+
+<!ELEMENT studio (#PCDATA)>
+
+<!ELEMENT sales (#PCDATA)>
+
+<!ATTLIST sales
+          year CDATA #IMPLIED>
+
+<!ELEMENT price (#PCDATA)>
+
+<!ATTLIST price
+          shop CDATA #IMPLIED>
+
+<!ELEMENT logo (EMPTY)>
+
+<!ATTLIST logo
+		   src CDATA #IMPLIED>
+
+<!-- end characterisitics -->
+
+
+<!-- start resume -->
+
+<!ELEMENT resume (genre,goal,description)>
+
+<!ELEMENT genre (#PCDATA)>
+
+<!ELEMENT goal (#PCDATA)>
+
+<!ELEMENT description (#PCDATA)>
+
+<!-- end resume -->
+
+
+<!-- start opinion -->
+
+<!ENTITY note "0|1|2|3|4|5|6|7|8|9|10">
+
+<!ELEMENT opinion (jacob?,yannis?)>
+
+<!ELEMENT jacob (#PCDATA)>
+
+<!ATTLIST jacob
+          note #REQUIRED>
+
+<!ELEMENT yannis (#PCDATA)>
+
+<!ATTLIST yannis
+          note #REQUIRED>
+
+<!-- end opinion -->

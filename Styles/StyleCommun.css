@@ -1,0 +1,48 @@
+/****************
+* Balise header *
+*****************/
+
+header{
+    text-align: center;                /* Aligne le texte au centre */
+}
+
+/*******************************************
+* Balise a descendant de la balise header  *
+********************************************/
+
+header a{
+    background-color: darkgray;        /* Met la couleur de fond en gris */
+    color: black;                      /* Met la couleur en noir */
+    font-weight: bold;                 /* Met en gras */
+    margin: 1%;                        /* Met une marge de 1% sur tous les côtés*/
+    border-bottom: black solid 3px;    /* Met une bordure noire de 3 pixels en bas */
+    border-right: black solid 2px;     /* Met une bordure noire de 2 pixels à droite */
+    padding: 0.5%;                     /* Met les marges intérieurs à 0.5% sur tous les côtés */
+    display: inline-block;             /* Met les bloques sur une lignes */
+}
+
+/***********
+* Balise a *
+************/
+
+a{
+    text-decoration: none;             /* Enlève le soulignage */
+}
+
+/****************************************
+* Balise a quand la souris passe dessus *
+*****************************************/
+
+a:hover{
+    text-decoration: underline;        /* Souligne */
+    color: white;                      /* Met en blanc */
+}
+
+/************
+* Balise h1 *
+*************/
+
+h1{
+    text-align: center;                /* Aligne le texte au centre */
+    text-shadow: 0.05em 0.05em black;  /* Met un ombre noir */
+}

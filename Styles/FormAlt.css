@@ -1,0 +1,27 @@
+/**************************************************************
+* Importe un fichier de style pour un affichage de type écran *
+***************************************************************/
+
+@import "StyleMalvoyant.css" screen;
+
+/**************************************************************
+* Importe un fichier de style pour un affichage de type écran *
+***************************************************************/
+
+@import "Form.css" screen;
+
+/****************************************
+* Les balises input, textarea et button *
+*****************************************/
+
+input, select, textarea, button{
+    font-size: 1em;  /* Met la taille de la police à 1em */
+}
+
+/***********************
+* Les balises textarea *
+************************/
+
+textarea{
+    width: 90%;      /* Met la taille de la largeur à 90% */
+}
