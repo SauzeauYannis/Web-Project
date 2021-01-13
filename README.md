@@ -12,18 +12,18 @@
   * [Skills acquired](#en_sk)
   * [Result](#en_rs)
 
-<a name="fr"/>
 ## Français
+<a name="fr"/>
 
-<a name="fr_pr"/>
 ### Présentation
+<a name="fr_pr"/>
 
 Ce projet a été effectué en première année du [CMI Informatique](http://formations.univ-poitiers.fr/fr/index/autre-diplome-niveau-master-AM/autre-diplome-niveau-master-AM/cmi-informatique-JD2XQGVY.html) à l'[UFR SFA Université de Poitiers](https://sfa.univ-poitiers.fr/) dans le cadre de l'enseignement [Technologies du Web](http://formations.univ-poitiers.fr/fr/index/autre-diplome-niveau-master-AM/autre-diplome-niveau-master-AM/cmi-informatique-JD2XQGVY/specialite-s2-K5C6CNJ4/technologies-du-web-1-JB1YC60E.html).
 
 Ce projet a été développé en binôme et avec l'EDI [WebStorm](https://www.jetbrains.com/fr-fr/webstorm/).
 
-<a name="fr_ut"/>
 ### Utilisation
+<a name="fr_ut"/>
 
 Pour lancer le site, il faut ouvrir le fichier index.xhtml avec le navigateur de votre choix.
 
@@ -31,8 +31,8 @@ Ce site contient principalement une collection de revues de jeux, ainsi qu'un fo
 
 Il est adapté pour les malvoyants grâce à un style secondaire.
 
-<a name="fr_cp"/>
 ### Compétences acquises
+<a name="fr_cp"/>
 
 Créer un site web dynamique qui utilise :
 * les langages de descriptions XHTML et HTML.
@@ -45,23 +45,23 @@ Créer un site web dynamique qui utilise :
   * Dynamiser le site
   * Parcours du DOM
 
-<a name="fr_rs"/>
 ### Résultat
+<a name="fr_rs"/>
 
 Nous avons obtenu la note de 19.5/20.
 
-<a name="en"/>
 ## English
+<a name="en"/>
 
-<a name="en_pr"/>
 ### Presentation
+<a name="en_pr"/>
 
 This project was carried out in the first year of the [CMI Informatique](http://formations.univ-poitiers.fr/fr/index/autre-diplome-niveau-master-AM/autre-diplome-niveau-master-AM/cmi-informatique-JD2XQGVY.html) at the [UFR SFA Université de Poitiers](https://sfa.univ-poitiers.fr/) as part of the [Web Technologies](http://formations.univ-poitiers.fr/fr/index/autre-diplome-niveau-master-AM/autre-diplome-niveau-master-AM/cmi-informatique-JD2XQGVY/specialite-s2-K5C6CNJ4/technologies-du-web-1-JB1YC60E.html) teaching programme.
 
 This project was developed in pairs and with [WebStorm](https://www.jetbrains.com/fr-fr/webstorm/) IDE.
 
-<a name="en_u"/>
 ### Use
+<a name="en_u"/>
 
 To launch the site, open the index.xhtml file with the browser of your choice.
 
@@ -69,8 +69,8 @@ This site contains mainly a collection of game reviews, as well as a form to add
 
 It is adapted for the visually impaired thanks to a secondary style.
 
-<a name="en_sk"/>
 ### Skills acquired
+<a name="en_sk"/>
 
 Create a dynamic website that uses :
 * the description languages XHTML and HTML.
@@ -83,7 +83,7 @@ Create a dynamic website that uses :
   * Making the site more dynamic
   * Course of the DOM
 
-<a name="en_rs"/>
 ### Result
+<a name="en_rs"/>
 
 We obtained a score of 19.5/20.
