@@ -39,7 +39,7 @@ Il est adapté pour les malvoyants grâce à un style secondaire.
 ### Compétences acquises
 
 Créer un site web dynamique qui utilise :
-* les langages de descriptions XHTML et HTML.
+* les langages de descriptions XML, HTML et XHTML.
   * Respect de la norme du [W3C](https://validator.w3.org/)
   * Structuration des données et lisibilité du code
 * les feuilles de style en CSS.
@@ -47,7 +47,7 @@ Créer un site web dynamique qui utilise :
   * Amélioration de la présentation du site
 * le langage JavaScript.
   * Dynamiser le site
-  * Parcours du DOM
+  * Parcours et maniuplation du DOM
 
 <a name="fr_rs"/>
 
@@ -82,7 +82,7 @@ It is adapted for the visually impaired thanks to a secondary style.
 ### Skills acquired
 
 Create a dynamic website that uses :
-* the description languages XHTML and HTML.
+* the description languages XML, HTML and XHTML.
   * Compliance with the [W3C](https://validator.w3.org/) standard.
   * Data structuring and code legibility
 * CSS style sheets.
@@ -90,7 +90,7 @@ Create a dynamic website that uses :
   * Improvement of the site's presentation
 * the JavaScript language.
   * Making the site more dynamic
-  * Course of the DOM
+  * DOM traversal and manipulations
   
 <a name="en_rs"/>
 
