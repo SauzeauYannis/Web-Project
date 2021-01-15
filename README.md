@@ -63,9 +63,9 @@ Nous avons obtenu la note de 19.5/20.
 
 ### Presentation
 
-This project was carried out in the first year of the [CMI Informatique](http://formations.univ-poitiers.fr/fr/index/autre-diplome-niveau-master-AM/autre-diplome-niveau-master-AM/cmi-informatique-JD2XQGVY.html) at the [UFR SFA Université de Poitiers](https://sfa.univ-poitiers.fr/) as part of the [Web Technologies](http://formations.univ-poitiers.fr/fr/index/autre-diplome-niveau-master-AM/autre-diplome-niveau-master-AM/cmi-informatique-JD2XQGVY/specialite-s2-K5C6CNJ4/technologies-du-web-1-JB1YC60E.html) teaching programme.
+This project was carried out in the first year of the [CMI Informatique](http://formations.univ-poitiers.fr/fr/index/autre-diplome-niveau-master-AM/autre-diplome-niveau-master-AM/cmi-informatique-JD2XQGVY.html) at the [University of Poitiers](https://www.univ-poitiers.fr/en/) as part of the [Web Technologies](http://formations.univ-poitiers.fr/fr/index/autre-diplome-niveau-master-AM/autre-diplome-niveau-master-AM/cmi-informatique-JD2XQGVY/specialite-s2-K5C6CNJ4/technologies-du-web-1-JB1YC60E.html) teaching programme.
 
-This project was developed in pairs and with [WebStorm](https://www.jetbrains.com/fr-fr/webstorm/) IDE.
+This project was developed in pairs and with [WebStorm](https://www.jetbrains.com/webstorm/) IDE.
 
 <a name="en_u"/>
 
